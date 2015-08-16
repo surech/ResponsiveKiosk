@@ -2,20 +2,29 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>Kiosk</title>
     <link rel="stylesheet" type="text/css" href="kiosk.css"/>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js" ></script>
-    <script src="kiosk.js" ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="kiosk.js"></script>
 </head>
 <body>
 <div class="content">
     <iframe id="kiosk" name="kiosk" class="kiosk"></iframe>
 </div>
 <div class="navigation">
-    <button type="button" onclick="goHome()">Restart</button>
-    <button type="button" onclick="goBack()">Zurück</button>
-    <button type="button" onclick="goForward()">Weiter</button>
+    <button type="button" class="btn btn-default" onclick="goHome()">
+        <span class="glyphicon glyphicon-home" aria-hidden="true"/> Restart
+    </button>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default" onclick="goBack()">
+            <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"/> Zurück
+        </button>
+        <button type="button" class="btn btn-default" onclick="goForward()">
+            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"/> Weiter
+        </button>
+    </div>
 </div>
 </body>
 </html>
