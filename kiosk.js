@@ -23,3 +23,16 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
 };
+
+var goHome = function(){
+    frames[0].location = defaultUrl;
+};
+
+var goBack = function () {
+    //frames[0].contentWindow.history.back();
+    kiosk.history.back();
+};
+
+var goForward = function () {
+    frames[0].contentWindow.history.forward();
+};
