@@ -5,4 +5,4 @@ Die Seite kann hier direkt angesehen werden:
 http://www.surech.ch/responsiveKiosk/kiosk.xhtml
 
 Die angezeigte URL kann per Parameter übergeben werden:
-[ULR](http://www.surech.ch/responsiveKiosk/kiosk.xhtml?url=http://www.swiss.com)
+http://www.surech.ch/responsiveKiosk/kiosk.xhtml?url=http://www.swiss.com
